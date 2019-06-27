@@ -1,0 +1,21 @@
+@import 'variables';
+
+.navbar {
+    padding: 1rem !important;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+.nav-link {
+    &.btn-secondary {
+        color: #fff !important;
+    }
+    &.active:not(.btn) {
+        color: $primary !important;
+    }
+}
