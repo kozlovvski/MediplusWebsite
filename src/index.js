@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //
 // components
@@ -18,7 +18,7 @@ import Home from "./pages/Home";
 import Appointment from "./pages/Appointment";
 
 ReactDOM.render(
-	<Router>
+	<Router basename={process.env.PUBLIC_URL}>
 		<Navigation />
 		<Switch>
 			<Route exact path="/" component={Home} />
