@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5aeaceffa9d9c81ae3c992031948715",
+    "revision": "06856a92c124e06a012732476459cb63",
     "url": "/MediplusWebsite/index.html"
   },
   {
-    "revision": "96c2a87be7f1890c2e78",
+    "revision": "46dce86e8cf58ffacf92",
     "url": "/MediplusWebsite/static/css/main.69b9e857.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MediplusWebsite/static/js/2.bc6d40e6.chunk.js"
   },
   {
-    "revision": "96c2a87be7f1890c2e78",
-    "url": "/MediplusWebsite/static/js/main.d40fdfc0.chunk.js"
+    "revision": "46dce86e8cf58ffacf92",
+    "url": "/MediplusWebsite/static/js/main.bd6bd9de.chunk.js"
   },
   {
     "revision": "b0c993285882c55f27a7",
