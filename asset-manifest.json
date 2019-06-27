@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MediplusWebsite/static/css/main.69b9e857.chunk.css",
+    "main.js": "/MediplusWebsite/static/js/main.d40fdfc0.chunk.js",
+    "main.js.map": "/MediplusWebsite/static/js/main.d40fdfc0.chunk.js.map",
+    "runtime~main.js": "/MediplusWebsite/static/js/runtime~main.ff30a35b.js",
+    "runtime~main.js.map": "/MediplusWebsite/static/js/runtime~main.ff30a35b.js.map",
+    "static/js/2.bc6d40e6.chunk.js": "/MediplusWebsite/static/js/2.bc6d40e6.chunk.js",
+    "static/js/2.bc6d40e6.chunk.js.map": "/MediplusWebsite/static/js/2.bc6d40e6.chunk.js.map",
+    "index.html": "/MediplusWebsite/index.html",
+    "precache-manifest.3ccb528d8b77f510c326fb155daff1dd.js": "/MediplusWebsite/precache-manifest.3ccb528d8b77f510c326fb155daff1dd.js",
+    "service-worker.js": "/MediplusWebsite/service-worker.js",
+    "static/css/main.69b9e857.chunk.css.map": "/MediplusWebsite/static/css/main.69b9e857.chunk.css.map",
+    "static/media/index.scss": "/MediplusWebsite/static/media/bg_3.bc761fc9.jpg",
+    "static/media/about.jpg": "/MediplusWebsite/static/media/about.6d9648cb.jpg"
+  }
+}
