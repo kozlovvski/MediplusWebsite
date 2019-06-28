@@ -1,10 +1,28 @@
-@import 'scss/Home';
-@import 'scss/Navigation';
+// 
+// pages
+// 
 
-@import 'scss/variables';
+@import 'pages/Home/Home';
+@import 'pages/Appointment/Appointment';
+
+// 
+// components
+// 
+
+@import 'components/Navigation/Navigation';
+
+// 
+// stylesheets
+// 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// 
+// overrides
+// 
+
 @import "fonts/flaticon.css";
+@import 'scss/variables';
 
 h1, h2 {
   font-weight: 700;

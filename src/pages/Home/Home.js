@@ -14,7 +14,7 @@ import { LinkContainer } from "react-router-bootstrap";
 // images
 //
 
-import aboutDoctorImage from "../images/about.jpg";
+import aboutDoctorImage from "images/about.jpg";
 
 export default class Home extends Component {
 	state = {

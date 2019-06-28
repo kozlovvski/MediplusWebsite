@@ -8,14 +8,18 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // components
 //
 
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Navigation/Navigation";
 
 //
 // pages
 //
 
-import Home from "./pages/Home";
-import Appointment from "./pages/Appointment";
+import Home from "./pages/Home/Home";
+import Appointment from "./pages/Appointment/Appointment";
+
+// 
+// main
+// 
 
 ReactDOM.render(
 	<Router basename={process.env.PUBLIC_URL}>
