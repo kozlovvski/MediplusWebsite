@@ -17,7 +17,7 @@ export default function Navigation() {
 			sticky="top"
 			bg="light"
 			collapseOnSelect
-			expand="md"
+			expand="lg"
 		>
 			<Container>
 				<Navbar.Brand className="font-weight-bold">Mediplus</Navbar.Brand>
@@ -30,8 +30,8 @@ export default function Navigation() {
 						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#About">
 							<Nav.Link>About</Nav.Link>
 						</HashLinkContainer>
-						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Department">
-							<Nav.Link>Department</Nav.Link>
+						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Departments">
+							<Nav.Link>Departments</Nav.Link>
 						</HashLinkContainer>
 						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Doctors">
 							<Nav.Link>Doctors</Nav.Link>
@@ -43,7 +43,7 @@ export default function Navigation() {
 							<Nav.Link>Contact</Nav.Link>
 						</HashLinkContainer>
 						<HashLinkContainer scroll={topMinusHeaderHeight} to="/appointment">
-							<Nav.Link className="btn btn-secondary ml-md-1">
+							<Nav.Link className="btn btn-secondary ml-lg-1">
 								Appointment
 							</Nav.Link>
 						</HashLinkContainer>

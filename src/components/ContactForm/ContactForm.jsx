@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 export default class ContactForm extends Component {
 	render() {
 		return (
-			<Form onSubmit={e => e.preventDefault()}>
+			<Form className={this.props.className} onSubmit={e => e.preventDefault()}>
 				<Form.Group controlId="FirstName">
 					<Form.Label srOnly>First Name</Form.Label>
 					<Form.Control type="text" placeholder="First Name" />

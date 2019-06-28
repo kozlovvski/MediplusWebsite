@@ -3,12 +3,24 @@ import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 //
+// components
+//
+
+import Service from "components/Service/Service";
+import ContactForm from "components/ContactForm/ContactForm";
+import Department from "components/Department/Department";
+import Doctor from "components/Doctor/Doctor";
+import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
+
+//
 // images
 //
 
 import aboutDoctorImage from "images/about.jpg";
-import Service from "components/Service/Service";
-import ContactForm from "components/ContactForm/ContactForm";
+
+//
+// main
+//
 
 export default class Home extends Component {
 	state = {
@@ -49,9 +61,83 @@ export default class Home extends Component {
 					"Dorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi."
 			},
 			{
-				id: 46,
+				id: 6,
 				name: "And even more",
 				icon: "flaticon-heart-rate",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			}
+		],
+		departments: [
+			{
+				id: 1,
+				name: "Neurology",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 2,
+				name: "Opthalmology",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 3,
+				name: "Surgical",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 4,
+				name: "Cardiology",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 5,
+				name: "Dental",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 6,
+				name: "Traumatology",
+				icon: "flaticon-stethoscope",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			}
+		],
+		doctors: [
+			{
+				id: 1,
+				name: "Dr. Lloyd Kowalski",
+				spec: "Neurologist",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 2,
+				name: "Dr. Anna Johnson",
+				spec: "Cardiologist",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 3,
+				name: "Dr. John Stephen",
+				spec: "Dentist",
+				description:
+					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+			},
+			{
+				id: 4,
+				name: "Dr. Gina Davidson",
+				spec: "Pediatrician",
 				description:
 					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
 			}
@@ -63,7 +149,7 @@ export default class Home extends Component {
 	}
 	render() {
 		return (
-			<main>
+			<React.Fragment>
 				<section id="Home">
 					<Container>
 						<Row className="py-3 py-md-5">
@@ -123,10 +209,10 @@ export default class Home extends Component {
 
 				<section id="Services" className="bg-light">
 					<Container>
-						<Row className="px-2">
+						<Row className="px-sm-2">
 							<Col
 								lg={{ span: 5, order: 12 }}
-								className="bg-white mt-3 mt-lg-0 py-3 py-lg-5 px-3"
+								className="services-description mt-3 mt-lg-0 py-3 py-lg-5 px-sm-3"
 							>
 								<p className="subheading">Our Services</p>
 								<h2 className="mb-2">What we take pride in</h2>
@@ -135,9 +221,9 @@ export default class Home extends Component {
 									voluptatem iure quis, quaerat minus nesciunt, culpa voluptatum
 									nobis consectetur.
 								</p>
-								<ContactForm />
+								<ContactForm className="d-none d-sm-block" />
 							</Col>
-							<Col lg={7} className="mt-3 py-0 mt-lg-0 py-lg-5 pr-lg-3">
+							<Col lg={7} className="mt-sm-3 py-0 mt-lg-0 py-lg-5 pr-lg-3">
 								<Row>
 									{this.state.services.map(service => {
 										return <Service service={service} key={service.id} />;
@@ -150,21 +236,68 @@ export default class Home extends Component {
 
 				<section id="YourHealth">
 					<Container>
-						<Row className="justify-content-center">
-							<Col md={8} lg={6} className="py-5 text-center text-light">
+						<Row className="py-5 justify-content-center">
+							<Col md={8} lg={6} className="text-center text-light">
 								<h2 className="mb-2">Your Health is Our Priority</h2>
 								<p className="mb-2">
 									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
 									asperiores adipisci dolorem voluptatum.
 								</p>
-								<Button variant="light">
-									Search Places
-								</Button>
+								<Button variant="light">Search Places</Button>
 							</Col>
 						</Row>
 					</Container>
 				</section>
-			</main>
+
+				<section id="Departments">
+					<Container>
+						<Row className="px-sm-2 py-3 py-lg-0">
+							<Col
+								lg={5}
+								className="departments-description py-3 py-lg-5 px-sm-3"
+							>
+								<p className="subheading">Departments</p>
+								<h2 className="mb-2">What we specialize in</h2>
+								<p className="mb-2">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+									voluptatem iure quis, quaerat minus nesciunt, culpa voluptatum
+									nobis consectetur.
+								</p>
+								<Button variant="outline-primary">Learn more</Button>
+							</Col>
+							<Col lg={7}>
+								<Row>
+									{this.state.departments.map(department => {
+										return (
+											<Department department={department} key={department.id} />
+										);
+									})}
+								</Row>
+							</Col>
+						</Row>
+					</Container>
+				</section>
+
+				<section id="Doctors">
+					<Container className="py-3 py-md-5">
+						<Row className="justify-content-center mb-2">
+							<Col md={8} lg={6} className="text-center">
+								<h2 className="mb-2">Our Doctors</h2>
+								<p className="mb-2">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+									asperiores adipisci dolorem voluptatum.
+								</p>
+							</Col>
+						</Row>
+						<Row>
+							{this.state.doctors.map(doctor => {
+								return <Doctor doctor={doctor} key={doctor.id} />;
+							})}
+						</Row>
+					</Container>
+				</section>
+				<MediplusInNumbers />
+			</React.Fragment>
 		);
 	}
 }

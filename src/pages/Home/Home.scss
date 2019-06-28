@@ -11,9 +11,30 @@ html, body {
     }
 }
 
+#Services {
+    .services-description {
+        @media (min-width: 576px) {
+            background: white
+        }
+    }
+}
+
 #YourHealth {
     background: linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/bg_2.jpg);
     background-size: cover;
+    background-position: 55% 40%;
+}
+
+#Departments {
+    background: url(images/bg_1.jpg);
+    background-size: cover;
+    background-position: 30% 30%;
+
+    .departments-description {
+        @media (min-width: 576px) {
+            background: white
+        }
+    }
 }
 
 .about-doctor-image {

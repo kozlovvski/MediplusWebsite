@@ -24,7 +24,13 @@
 
 @import 'components/Navigation/Navigation';
 @import 'components/Service/Service';
+@import 'components/Department/Department';
+@import 'components/Doctor/Doctor.scss';
+@import 'components/MediplusInNumbers/MediplusinNumbers';
 
+// 
+// main
+// 
 
 h1, h2 {
   font-weight: 700;
