@@ -1,4 +1,17 @@
 // 
+// overrides
+// 
+
+@import "fonts/flaticon.css";
+@import 'scss/variables';
+
+// 
+// stylesheets
+// 
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 
 // pages
 // 
 
@@ -10,19 +23,8 @@
 // 
 
 @import 'components/Navigation/Navigation';
+@import 'components/Service/Service';
 
-// 
-// stylesheets
-// 
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// 
-// overrides
-// 
-
-@import "fonts/flaticon.css";
-@import 'scss/variables';
 
 h1, h2 {
   font-weight: 700;

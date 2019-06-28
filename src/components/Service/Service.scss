@@ -1,0 +1,19 @@
+.service-icon {
+	font-size: 50px;
+	position: relative;
+	width: 1.5em;
+	height: 1.5em;
+	color: $secondary;
+	background-color: lighten($secondary, 30);
+	border-radius: 50%;
+
+	&::before {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			margin: 0 !important;
+			display: block;
+			font-size: inherit !important;
+	}
+}

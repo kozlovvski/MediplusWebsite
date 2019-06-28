@@ -1,11 +1,9 @@
-@import '../../scss/variables';
-
 html, body {
     height: 100%
 }
 
 #Home {
-    background: url(./images/bg_3.jpg);
+    background: url(images/bg_3.jpg);
     background-position: 50% 40%;
 
     @media (max-width: 575px) {
@@ -13,8 +11,9 @@ html, body {
     }
 }
 
-.spacing {
-    padding: 100px 0;
+#YourHealth {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(images/bg_2.jpg);
+    background-size: cover;
 }
 
 .about-doctor-image {
@@ -25,25 +24,5 @@ html, body {
 
     @media (max-width: 767px) {
         max-height: 50vw;
-    }
-}
-
-.service-icon {
-    font-size: 50px;
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    color: $secondary;
-    background-color: lighten($secondary, 30);
-    border-radius: 50%;
-
-    &::before {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0 !important;
-        display: block;
-        font-size: inherit !important;
     }
 }

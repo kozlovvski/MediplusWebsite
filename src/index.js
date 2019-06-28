@@ -8,14 +8,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // components
 //
 
-import Navigation from "./components/Navigation/Navigation";
+import Navigation from "components/Navigation/Navigation";
 
 //
 // pages
 //
 
-import Home from "./pages/Home/Home";
-import Appointment from "./pages/Appointment/Appointment";
+import Home from "pages/Home/Home";
+import Appointment from "pages/Appointment/Appointment";
 
 // 
 // main

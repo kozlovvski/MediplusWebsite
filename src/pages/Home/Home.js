@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-	Container,
-	Col,
-	Row,
-	Button,
-	Image,
-	Media,
-	Form
-} from "react-bootstrap";
+import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 //
@@ -15,6 +7,8 @@ import { LinkContainer } from "react-router-bootstrap";
 //
 
 import aboutDoctorImage from "images/about.jpg";
+import Service from "components/Service/Service";
+import ContactForm from "components/ContactForm/ContactForm";
 
 export default class Home extends Component {
 	state = {
@@ -65,7 +59,7 @@ export default class Home extends Component {
 	};
 
 	componentDidMount() {
-		this.setState({isLoading: false});
+		this.setState({ isLoading: false });
 	}
 	render() {
 		return (
@@ -141,49 +135,31 @@ export default class Home extends Component {
 									voluptatem iure quis, quaerat minus nesciunt, culpa voluptatum
 									nobis consectetur.
 								</p>
-								<Form onSubmit={e => e.preventDefault()}>
-									<Form.Group controlId="FirstName">
-										<Form.Label srOnly>First Name</Form.Label>
-										<Form.Control type="text" placeholder="First Name" />
-									</Form.Group>
-
-									<Form.Group controlId="Email">
-										<Form.Label srOnly>Email address</Form.Label>
-										<Form.Control type="email" placeholder="Enter email" />
-										<Form.Text className="text-muted">
-											We'll never share your email with anyone else.
-										</Form.Text>
-									</Form.Group>
-
-									<Form.Group controlId="Message">
-										<Form.Label srOnly>Your messsage</Form.Label>
-										<Form.Control
-											as="textarea"
-											placeholder="How can we help you?"
-											rows="3"
-										/>
-									</Form.Group>
-
-									<Button variant="secondary" type="submit">
-										Get in touch
-									</Button>
-								</Form>
+								<ContactForm />
 							</Col>
 							<Col lg={7} className="mt-3 py-0 mt-lg-0 py-lg-5 pr-lg-3">
 								<Row>
 									{this.state.services.map(service => {
-										const { name, icon, description, id } = service;
-										return (
-											<Media className="col-md-6 col-lg-12 col-xl-6 mb-1 col-auto" key={id}>
-												<i className={"service-icon mr-3 " + icon} />
-												<Media.Body>
-													<h3>{name}</h3>
-													<p>{description}</p>
-												</Media.Body>
-											</Media>
-										);
+										return <Service service={service} key={service.id} />;
 									})}
 								</Row>
+							</Col>
+						</Row>
+					</Container>
+				</section>
+
+				<section id="YourHealth">
+					<Container>
+						<Row className="justify-content-center">
+							<Col md={8} lg={6} className="py-5 text-center text-light">
+								<h2 className="mb-2">Your Health is Our Priority</h2>
+								<p className="mb-2">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+									asperiores adipisci dolorem voluptatum.
+								</p>
+								<Button variant="light">
+									Search Places
+								</Button>
 							</Col>
 						</Row>
 					</Container>
