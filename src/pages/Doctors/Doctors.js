@@ -10,7 +10,7 @@ export default class Doctor extends Component {
 		return (
 			<React.Fragment>
 				<Hero
-					subheading={doctorData.spec}
+					subheading="Doctor"
 					title={doctorData.name}
 					description={doctorData.description}
 					backgroundImage={require("images/bg_2.jpg")}

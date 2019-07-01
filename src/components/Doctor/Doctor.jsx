@@ -12,7 +12,7 @@ export default class Doctor extends Component {
 				<h3 className="mb-0">{name}</h3>
 				<p className="subheading">{spec}</p>
 				<p>{description}</p>
-				<LinkContainer to={`/doctor/${id}`}>
+				<LinkContainer to={`/doctors/${id}`}>
 					<Button variant="primary">Book visit</Button>
 				</LinkContainer>
 			</Col>

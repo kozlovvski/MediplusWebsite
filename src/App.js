@@ -14,7 +14,8 @@ import Navigation from "components/Navigation/Navigation";
 import Home from "pages/Home/Home";
 import Appointment from "pages/Appointment/Appointment";
 import Contact from 'components/Contact/Contact'
-import Doctor from "pages/Doctor/Doctor";
+import Doctor from "pages/Doctors/Doctors";
+import Service from 'pages/Departments/Departments'
 
 //
 // main
@@ -29,7 +30,8 @@ export default class App extends Component {
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/appointment" component={Appointment} />
-						<Route path="/doctor/:id" component={Doctor} />
+						<Route path="/doctors/:id" component={Doctor} />
+						<Route path="/departments/:id" component={Service} />
 					</Switch>
 				</main>
 				<Contact />
