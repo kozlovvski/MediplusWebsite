@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Col, Image, Button } from 'react-bootstrap';
+import React, { Component } from "react";
+import { Col, Image, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 export default class Doctor extends Component {
 	render() {
@@ -11,8 +12,10 @@ export default class Doctor extends Component {
 				<h3 className="mb-0">{name}</h3>
 				<p className="subheading">{spec}</p>
 				<p>{description}</p>
-				<Button variant="primary">Book visit</Button>
+				<LinkContainer to={`/doctor/${id}`}>
+					<Button variant="primary">Book visit</Button>
+				</LinkContainer>
 			</Col>
-		)
+		);
 	}
 }

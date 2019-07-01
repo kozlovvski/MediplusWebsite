@@ -1,10 +1,6 @@
-html, body {
-    height: 100%
-}
-
 #Home {
-    background: url(images/bg_3.jpg);
     background-position: 50% 40%;
+    background-size: auto;
 
     @media (max-width: 575px) {
         background-position: 55% 40%;

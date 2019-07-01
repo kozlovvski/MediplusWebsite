@@ -4,7 +4,7 @@ import ContactForm from "components/ContactForm/ContactForm";
 
 export default function Contact() {
 	return (
-		<section id="Services" className="bg-light">
+		<section id="Contact" className="bg-light">
 			<Container>
 				<Row className="py-3 py-md-0">
 					<Col md={6} lg={7} className="py-0 py-md-5 pr-md-3">

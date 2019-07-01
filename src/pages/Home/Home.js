@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import WebsiteData from 'data.json';
 
 //
 // components
@@ -11,6 +12,7 @@ import ContactForm from "components/ContactForm/ContactForm";
 import Department from "components/Department/Department";
 import Doctor from "components/Doctor/Doctor";
 import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
+import Hero from 'components/Hero/Hero'
 
 //
 // images
@@ -23,153 +25,13 @@ import aboutDoctorImage from "images/about.jpg";
 //
 
 export default class Home extends Component {
-	state = {
-		services: [
-			{
-				id: 1,
-				name: "Emergency Services",
-				icon: "flaticon-ambulance",
-				description:
-					"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi."
-			},
-			{
-				id: 2,
-				name: "Qualified Doctors",
-				icon: "flaticon-doctor",
-				description:
-					"Mujer uno dolor más de poder mismo si. Consecuencia, chicharra?"
-			},
-			{
-				id: 3,
-				name: "Outdoor Checkups",
-				icon: "flaticon-stethoscope",
-				description:
-					"Debitis ipsa tempora illum molestias, non repudiandae! Neque, exercitationem culpa!"
-			},
-			{
-				id: 4,
-				name: "24 Hours Service",
-				icon: "flaticon-24-hours",
-				description:
-					"Aut numquam illum eligendi animi consequatur labore at minima, a illo"
-			},
-			{
-				id: 5,
-				name: "Something else",
-				icon: "flaticon-experiment-results",
-				description:
-					"Dorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi."
-			},
-			{
-				id: 6,
-				name: "And even more",
-				icon: "flaticon-heart-rate",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			}
-		],
-		departments: [
-			{
-				id: 1,
-				name: "Neurology",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 2,
-				name: "Opthalmology",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 3,
-				name: "Surgical",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 4,
-				name: "Cardiology",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 5,
-				name: "Dental",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 6,
-				name: "Traumatology",
-				icon: "flaticon-stethoscope",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			}
-		],
-		doctors: [
-			{
-				id: 1,
-				name: "Dr. Lloyd Kowalski",
-				spec: "Neurologist",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 2,
-				name: "Dr. Anna Johnson",
-				spec: "Cardiologist",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 3,
-				name: "Dr. John Stephen",
-				spec: "Dentist",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			},
-			{
-				id: 4,
-				name: "Dr. Gina Davidson",
-				spec: "Pediatrician",
-				description:
-					"Eligendi animi aut numquam illum consequatur labore at minima, a illo"
-			}
-		]
-	};
-
-	componentDidMount() {
-		this.setState({ isLoading: false });
-	}
 	render() {
 		return (
 			<React.Fragment>
-				<section id="Home">
-					<Container>
-						<Row className="py-3 py-md-5">
-							<Col md={6}>
-								<p className="subheading">Welcome to Mediplus</p>
-								<h1 className="mb-2">We are here for your care</h1>
-								<p className="mb-2">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+				<Hero id="Home" subheading="Welcome to Mediplus" title="We are here for your care" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
 									asperiores adipisci dolorem voluptatum saepe at velit qui
 									veritatis, minima dolorum vero quas ullam exercitationem
-									animi. Soluta dicta excepturi temporibus assumenda.
-								</p>
-								<LinkContainer to="/appointment">
-									<Button variant="primary">Make an appointment</Button>
-								</LinkContainer>
-							</Col>
-						</Row>
-					</Container>
-				</section>
-
+									animi. Soluta dicta excepturi temporibus assumenda." />
 				<section id="About">
 					<Container>
 						<Row className="py-3 py-md-0">
@@ -225,7 +87,7 @@ export default class Home extends Component {
 							</Col>
 							<Col lg={7} className="mt-sm-3 py-0 mt-lg-0 py-lg-5 pr-lg-3">
 								<Row>
-									{this.state.services.map(service => {
+									{WebsiteData.services.map(service => {
 										return <Service service={service} key={service.id} />;
 									})}
 								</Row>
@@ -267,7 +129,7 @@ export default class Home extends Component {
 							</Col>
 							<Col lg={7}>
 								<Row>
-									{this.state.departments.map(department => {
+									{WebsiteData.departments.map(department => {
 										return (
 											<Department department={department} key={department.id} />
 										);
@@ -290,7 +152,7 @@ export default class Home extends Component {
 							</Col>
 						</Row>
 						<Row>
-							{this.state.doctors.map(doctor => {
+							{WebsiteData.doctors.map(doctor => {
 								return <Doctor doctor={doctor} key={doctor.id} />;
 							})}
 						</Row>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 export default function MediplusInNumbers() {
 	return (
@@ -14,7 +15,9 @@ export default function MediplusInNumbers() {
 							Reprehenderit, possimus veritatis corporis iure quod omnis
 							officiis non praesentium eos at.
 						</p>
-						<Button variant="secondary">Make an appointment</Button>
+						<LinkContainer to="/appointment">
+							<Button variant="secondary">Make an appointment</Button>
+						</LinkContainer>
 					</Col>
 					<Col md={6} className="d-none d-sm-block">
 						<Row>

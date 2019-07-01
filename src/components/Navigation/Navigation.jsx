@@ -20,7 +20,9 @@ export default function Navigation() {
 			expand="lg"
 		>
 			<Container>
-				<Navbar.Brand className="font-weight-bold">Mediplus</Navbar.Brand>
+				<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Home">
+					<Navbar.Brand className="font-weight-bold">Mediplus</Navbar.Brand>
+				</HashLinkContainer>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="ml-auto" defaultActiveKey="/#Home">
@@ -35,9 +37,6 @@ export default function Navigation() {
 						</HashLinkContainer>
 						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Doctors">
 							<Nav.Link>Doctors</Nav.Link>
-						</HashLinkContainer>
-						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Blog">
-							<Nav.Link>Blog</Nav.Link>
 						</HashLinkContainer>
 						<HashLinkContainer scroll={topMinusHeaderHeight} to="/#Contact">
 							<Nav.Link>Contact</Nav.Link>

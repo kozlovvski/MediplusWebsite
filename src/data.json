@@ -1,0 +1,104 @@
+{
+	"services": [
+		{
+			"id": 1,
+			"name": "Emergency Services",
+			"icon": "flaticon-ambulance",
+			"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi."
+		},
+		{
+			"id": 2,
+			"name": "Qualified Doctors",
+			"icon": "flaticon-doctor",
+			"description": "Mujer uno dolor más de poder mismo si. Consecuencia, chicharra?"
+		},
+		{
+			"id": 3,
+			"name": "Outdoor Checkups",
+			"icon": "flaticon-stethoscope",
+			"description": "Debitis ipsa tempora illum molestias, non repudiandae! Neque, exercitationem culpa!"
+		},
+		{
+			"id": 4,
+			"name": "24 Hours Service",
+			"icon": "flaticon-24-hours",
+			"description": "Aut numquam illum eligendi animi consequatur labore at minima, a illo"
+		},
+		{
+			"id": 5,
+			"name": "Something else",
+			"icon": "flaticon-experiment-results",
+			"description": "Dorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi."
+		},
+		{
+			"id": 6,
+			"name": "And even more",
+			"icon": "flaticon-heart-rate",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		}
+	],
+	"departments": [
+		{
+			"id": 1,
+			"name": "Neurology",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 2,
+			"name": "Opthalmology",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 3,
+			"name": "Surgical",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 4,
+			"name": "Cardiology",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 5,
+			"name": "Dental",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 6,
+			"name": "Traumatology",
+			"icon": "flaticon-stethoscope",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		}
+	],
+	"doctors": [
+		{
+			"id": 1,
+			"name": "Dr. Lloyd Kowalski",
+			"spec": "Neurologist",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 2,
+			"name": "Dr. Anna Johnson",
+			"spec": "Cardiologist",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 3,
+			"name": "Dr. John Stephen",
+			"spec": "Dentist",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		},
+		{
+			"id": 4,
+			"name": "Dr. Gina Davidson",
+			"spec": "Pediatrician",
+			"description": "Eligendi animi aut numquam illum consequatur labore at minima, a illo"
+		}
+	]
+}
