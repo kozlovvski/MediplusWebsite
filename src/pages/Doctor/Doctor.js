@@ -13,7 +13,7 @@ export default class Doctor extends Component {
 					subheading={doctorData.spec}
 					title={doctorData.name}
 					description={doctorData.description}
-					backgroundImage={require("images/bg_1.jpg")}
+					backgroundImage={require("images/bg_2.jpg")}
 					hideAppointmentButton
 				/>
 			</React.Fragment>
