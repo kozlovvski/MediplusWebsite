@@ -9,6 +9,7 @@ export default function Departments(props) {
 		department => department.id.toString() === id
 	);
 
+	window.scrollTo(0, 0);
 	document.title = departmentData.name + " || Mediplus";
 
 	return (

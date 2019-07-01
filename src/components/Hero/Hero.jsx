@@ -36,12 +36,12 @@ function Hero(props) {
 }
 
 Hero.propTypes = {
-	id: PropTypes.number,
+	id: PropTypes.string,
 	subheading: PropTypes.string,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string,
 	hideAppointmentButton: PropTypes.bool,
-	backgroundImage: PropTypes.func
+	backgroundImage: PropTypes.string
 }
 
 export default Hero
