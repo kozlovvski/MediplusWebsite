@@ -3,7 +3,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { genericHashLink } from "react-router-hash-link";
 
+// this enables routing to anchors inside pages
 const HashLinkContainer = props => genericHashLink(props, LinkContainer);
+
+// custom scrolling function so that the header doesn't overlap anchor content
 const topMinusHeaderHeight = el => {
 	const scrollY =
 		el.offsetTop - document.getElementById("site-navbar").offsetHeight;
