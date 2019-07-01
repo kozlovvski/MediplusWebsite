@@ -5,8 +5,9 @@ import WebsiteData from "data.json";
 export default class Department extends Component {
 	render() {
 		const id = this.props.match.params.id;
-		console.log(id)
 		const departmentData = WebsiteData.departments.find(department => department.id == id);
+
+		document.title = departmentData.name + " || Mediplus";
 
 		return (
 			<React.Fragment>

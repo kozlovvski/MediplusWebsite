@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Appointment() {
 	window.scrollTo(0, 0);
+	document.title = "Appointment || Mediplus";
+
 	return (
 		<React.Fragment>
 			<Hero

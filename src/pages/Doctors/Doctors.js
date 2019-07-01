@@ -7,6 +7,8 @@ export default class Doctor extends Component {
 		const id = this.props.match.params.id;
 		const doctorData = WebsiteData.doctors.find(doctor => doctor.id == id);
 
+		document.title = doctorData.name + " || Mediplus";
+
 		return (
 			<React.Fragment>
 				<Hero

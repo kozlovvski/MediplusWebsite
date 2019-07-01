@@ -25,6 +25,10 @@ import aboutDoctorImage from "images/about.jpg";
 //
 
 export default class Home extends Component {
+	componentDidMount() {
+		document.title = "Home || Mediplus";
+	}
+	
 	render() {
 		return (
 			<React.Fragment>
