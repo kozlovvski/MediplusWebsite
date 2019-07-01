@@ -3,6 +3,7 @@ import Hero from "components/Hero/Hero";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Appointment() {
+	window.scrollTo(0, 0);
 	return (
 		<React.Fragment>
 			<Hero

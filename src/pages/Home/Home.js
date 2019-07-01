@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Button, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import WebsiteData from 'data.json';
+import WebsiteData from "data.json";
 
 //
 // components
@@ -12,7 +12,7 @@ import ContactForm from "components/ContactForm/ContactForm";
 import Department from "components/Department/Department";
 import Doctor from "components/Doctor/Doctor";
 import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
-import Hero from 'components/Hero/Hero'
+import Hero from "components/Hero/Hero";
 
 //
 // images
@@ -28,10 +28,15 @@ export default class Home extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Hero id="Home" subheading="Welcome to Mediplus" title="We are here for your care" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+				<Hero
+					id="Home"
+					subheading="Welcome to Mediplus"
+					title="We are here for your care"
+					description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
 									asperiores adipisci dolorem voluptatum saepe at velit qui
 									veritatis, minima dolorum vero quas ullam exercitationem
-									animi. Soluta dicta excepturi temporibus assumenda." />
+									animi. Soluta dicta excepturi temporibus assumenda."
+				/>
 				<section id="About">
 					<Container>
 						<Row className="py-3 py-md-0">
@@ -45,7 +50,7 @@ export default class Home extends Component {
 							>
 								<p className="subheading">About Us</p>
 								<h2 className="mb-2">
-									We Are <span className="text-primary">Mediplus</span>{" "}
+									We Are <span className="text-primary">Mediplus </span>
 									Medical&nbsp;Clinic
 								</h2>
 								<p className="mb-2">

@@ -16,6 +16,7 @@ import Appointment from "pages/Appointment/Appointment";
 import Contact from 'components/Contact/Contact'
 import Doctor from "pages/Doctors/Doctors";
 import Service from 'pages/Departments/Departments'
+import Footer from "components/Footer/Footer";
 
 //
 // main
@@ -35,6 +36,7 @@ export default class App extends Component {
 					</Switch>
 				</main>
 				<Contact />
+				<Footer />
 			</Router>
 		);
 	}
