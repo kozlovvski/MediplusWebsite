@@ -10,6 +10,7 @@ import Department from "components/Department/Department";
 import Doctor from "components/Doctor/Doctor";
 import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
 import Hero from "components/Hero/Hero";
+import HashLinkContainer from "components/HashLinkContainer";
 
 export default function Home() {
 	document.title = "Home || Mediplus";
@@ -56,11 +57,11 @@ export default function Home() {
 									Make an appointment
 								</Button>
 							</LinkContainer>
-							<LinkContainer to="/#Contact">
+							<HashLinkContainer smooth to="/#Contact">
 								<Button variant="secondary" className="mb-2">
 									Contact Us
 								</Button>
-							</LinkContainer>
+							</HashLinkContainer>
 						</Col>
 					</Row>
 				</Container>
