@@ -2,6 +2,7 @@ import React from "react";
 
 import WebsiteData from "data.json";
 import Hero from "components/Hero/Hero";
+import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
 
 export default function Departments(props) {
 	const id = props.match.params.id;
@@ -22,6 +23,7 @@ export default function Departments(props) {
 				hideAppointmentButton
 			/>
 			<h2>Add something here...</h2>
+			<MediplusInNumbers />
 		</React.Fragment>
 	);
 }
