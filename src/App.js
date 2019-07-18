@@ -8,7 +8,7 @@ import Footer from "components/Footer";
 import Home from "pages/Home";
 import Appointment from "pages/Appointment";
 import Doctor from "pages/Doctors";
-import Service from "pages/Departments";
+import Department from "pages/Departments";
 
 export default function App() {
 	return (
@@ -19,7 +19,7 @@ export default function App() {
 					<Route exact path="/" component={Home} />
 					<Route path="/appointment" component={Appointment} />
 					<Route path="/doctors/:id" component={Doctor} />
-					<Route path="/departments/:id" component={Service} />
+					<Route path="/departments/:id" component={Department} />
 				</Switch>
 			</main>
 			<Contact />
