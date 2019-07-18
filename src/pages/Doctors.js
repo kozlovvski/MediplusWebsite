@@ -1,8 +1,8 @@
 import React from "react";
 
 import WebsiteData from "data.json";
-import Hero from "components/Hero/Hero";
-import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
+import Hero from "components/Hero";
+import MediplusInNumbers from "components/MediplusInNumbers";
 
 export default function Doctors(props) {
 	const id = props.match.params.id;

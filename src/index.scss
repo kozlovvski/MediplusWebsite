@@ -15,20 +15,20 @@
 // pages
 //
 
-@import "pages/Home/Home";
-@import "pages/Appointment/Appointment";
+@import "scss/Home";
+@import "scss/Appointment";
 
 //
 // components
 //
 
-@import "components/Navigation/Navigation";
-@import "components/Service/Service";
-@import "components/Department/Department";
-@import "components/Doctor/Doctor.scss";
-@import "components/MediplusInNumbers/MediplusinNumbers";
-@import "components/Hero/Hero";
-@import "components/Footer/Footer";
+@import "scss/Navigation";
+@import "scss/Service";
+@import "scss/Department";
+@import "scss/Doctor.scss";
+@import "scss/MediplusinNumbers";
+@import "scss/Hero";
+@import "scss/Footer";
 
 //
 // main

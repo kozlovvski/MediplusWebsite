@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navigation from "components/Navigation/Navigation";
-import Contact from "components/Contact/Contact";
-import Footer from "components/Footer/Footer";
+import Navigation from "components/Navigation";
+import Contact from "components/Contact";
+import Footer from "components/Footer";
 
-import Home from "pages/Home/Home";
-import Appointment from "pages/Appointment/Appointment";
-import Doctor from "pages/Doctors/Doctors";
-import Service from "pages/Departments/Departments";
+import Home from "pages/Home";
+import Appointment from "pages/Appointment";
+import Doctor from "pages/Doctors";
+import Service from "pages/Departments";
 
 export default function App() {
 	return (

@@ -4,12 +4,12 @@ import { LinkContainer } from "react-router-bootstrap";
 
 import WebsiteData from "data.json";
 
-import Service from "components/Service/Service";
-import ContactForm from "components/ContactForm/ContactForm";
-import Department from "components/Department/Department";
-import Doctor from "components/Doctor/Doctor";
-import MediplusInNumbers from "components/MediplusInNumbers/MediplusInNumbers";
-import Hero from "components/Hero/Hero";
+import Service from "components/Service";
+import ContactForm from "components/ContactForm";
+import Department from "components/Department";
+import Doctor from "components/Doctor";
+import MediplusInNumbers from "components/MediplusInNumbers";
+import Hero from "components/Hero";
 import HashLinkContainer from "components/HashLinkContainer";
 
 export default function Home() {

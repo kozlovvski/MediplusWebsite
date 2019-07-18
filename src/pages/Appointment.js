@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Hero from "components/Hero/Hero";
+import Hero from "components/Hero";
 
 export default function Appointment() {
 	window.scrollTo(0, 0);

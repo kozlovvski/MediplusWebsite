@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ContactForm from "components/ContactForm/ContactForm";
+import ContactForm from "components/ContactForm";
 
 export default function Contact() {
 	return (
