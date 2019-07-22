@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MediplusWebsite/precache-manifest.9c1dc26641acd8c57b206b08003abdd9.js"
+  "/MediplusWebsite/precache-manifest.a1942150f1e0d4335752190569265cd5.js"
 );
 
 self.addEventListener('message', (event) => {
